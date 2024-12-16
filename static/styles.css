@@ -7,3 +7,27 @@ body {
     background-color: rgba(255, 255, 255, 0.8); /* White overlay with 50% transparency */
     background-blend-mode: overlay; 
 }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 200px;
+    margin-left: 40px;
+}
+
+.pages {
+    display: flex;
+    margin-right: 40px;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.page-link {
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+}
