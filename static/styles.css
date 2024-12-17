@@ -131,6 +131,23 @@ h1, h2, h3 {
     list-style-type: none;
 }
 
+.reviews h1 {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+    gap: 30px;
+}
+
+.testimonials img{
+    width: 100%;
+    border-radius: 10px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .logo {
         height: 150px;
