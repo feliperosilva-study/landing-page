@@ -40,6 +40,10 @@ body {
     font-style: italic;
 }
 
+.menu-button {
+    display: none;
+}
+
 h1, h2, h3 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -68,6 +72,10 @@ h1, h2, h3 {
     font-style: normal;
 }
 
+.form h2 {
+    margin-bottom: 20px;
+}
+
 .form-control {
     width: 80%;
     border-radius: 5px;
@@ -88,4 +96,93 @@ h1, h2, h3 {
 .social-media img {
     height: 50px;
     margin-right: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        height: 150px;
+    }
+
+    .page-link {
+        font-size: 18px;
+    }
+
+    .menu {
+        margin-bottom: 20px;
+    }
+
+    .large-headline {
+        font-size: 30px;
+    }
+
+    .page-content {
+        gap: 100px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+    
+    .form h2 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .form h3 {
+        font-size: 20px;
+    }
+
+    .social-media img {
+        height: 40px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #CBC3E3;
+    }
+
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .menu-button {
+        display: flex;
+        margin-right: 30px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .logo-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-button:hover {
+        background-color: #593196;
+        color: white;
+    }
+
+    .pages {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .page-link {
+        font-size: 18px;
+    }
+
+    #toggle-menu:checked ~ .pages {
+        display: flex;
+    }
+
 }

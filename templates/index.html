@@ -25,14 +25,22 @@
 <body>
 
     <nav class="menu">
-        <img src="/static/img/logo.png" alt="logo" class="logo">
+        <div class="logo-button">
+            <img src="/static/img/logo.png" alt="logo" class="logo">
+            <label for="toggle-menu" class="menu-button">☰</label>
+        </div>
+         
+        <input type="checkbox" id="toggle-menu" hidden>
+
         <ul class="pages">
             <li><a href="" class="page-link">Home</a></li>
             <li><a href="" class="page-link">About Us</a></li>
             <li><a href="" class="page-link">Treatment</a></li>
             <li><a href="" class="page-link">Contact Us</a></li>
-        </ul>
+        </ul>        
     </nav>
+
+    
 
     <div class="page-content">
         <div class="info">
