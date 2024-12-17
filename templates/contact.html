@@ -20,7 +20,7 @@
     <!--Bootstrap Pulse Theme-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css">
 
-    <link rel="stylesheet" href="/static/contact.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
 </head>
 <body>
 
@@ -33,11 +33,11 @@
         <input type="checkbox" id="toggle-menu" hidden>
 
         <ul class="pages">
-            <li><a href="/templates/index.html" class="page-link">Home</a></li>
-            <li><a href="/templates/about.html" class="page-link">About Us</a></li>
-            <li><a href="/templates/treatment.html" class="page-link">Treatment</a></li>
-            <li><a href="/templates/contact.html" class="page-link">Contact Us</a></li>
-        </ul>        
+            <li><a href="{{ url_for('home') }}" class="page-link">Home</a></li>
+            <li><a href="{{ url_for('about') }}" class="page-link">About Us</a></li>
+            <li><a href="{{ url_for('treatment') }}" class="page-link">Treatment</a></li>
+            <li><a href="{{ url_for('contact') }}" class="page-link">Contact Us</a></li>
+        </ul>       
     </nav>
 
     <h1>Contact Us</h1>

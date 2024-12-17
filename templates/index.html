@@ -20,7 +20,7 @@
     <!--Bootstrap Pulse Theme-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css">
 
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
 
@@ -33,10 +33,10 @@
         <input type="checkbox" id="toggle-menu" hidden>
 
         <ul class="pages">
-            <li><a href="/templates/index.html" class="page-link">Home</a></li>
-            <li><a href="/templates/about.html" class="page-link">About Us</a></li>
-            <li><a href="/templates/treatment.html" class="page-link">Treatment</a></li>
-            <li><a href="/templates/contact.html" class="page-link">Contact Us</a></li>
+            <li><a href="{{ url_for('home') }}" class="page-link">Home</a></li>
+            <li><a href="{{ url_for('about') }}" class="page-link">About Us</a></li>
+            <li><a href="{{ url_for('treatment') }}" class="page-link">Treatment</a></li>
+            <li><a href="{{ url_for('contact') }}" class="page-link">Contact Us</a></li>
         </ul>       
     </nav>
 
@@ -53,19 +53,28 @@
         <div class="form">
             <h2>We want to make your dreams become true!</h2>
             <h3>Fill in the form and take the first step!</h3>
-            <form>
+            <form method="POST" action="/">
                 <fieldset>              
                 <div>
                     <label for="name" class="form-label mt-4">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
                     <label for="phone" class="form-label mt-4">Contact number</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Enter number">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter number">
                     <label for="email" class="form-label mt-4">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                    <button type="submit" class="btn btn-primary">Submit</button>                    
                 </div>
                 </fieldset>
-            </form>    
+            </form>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul class="flash">
+                        {% for category, message in messages %}
+                            <li class="{{ category }}">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}    
         </div>
     </div>
 
