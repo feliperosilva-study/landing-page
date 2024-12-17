@@ -7,6 +7,19 @@
 
     <link rel="icon" href="/static/img/beauty-icon.png">
 
+    <!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Playfair Display Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap Pulse Theme-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css">
+
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
@@ -21,17 +34,38 @@
         </ul>
     </nav>
 
-    <div class="info">
-        <h1 class="large-headline">Medical Clinic You Can Trust</h1>
-        <p>At Beauty and Health, we believe that true confidence comes from feeling your best, inside and out. As a leading aesthetics medical clinic, we are dedicated to enhancing your natural beauty while prioritizing your health and well-being.</p>
-        <p>Our expert team of licensed professionals combines cutting-edge technology with personalized care to deliver exceptional results. From rejuvenating skin treatments to advanced aesthetic procedures, every service is tailored to meet your unique needs.</p>
-        <p>We strive to provide a safe, comfortable, and professional environment where your beauty and health come first.</p>
-        <p>Discover the art of feeling radiant—welcome to a clinic where your transformation begins.</p>
+    <div class="page-content">
+        <div class="info">
+            <h1 class="large-headline">Medical Clinic You Can Trust</h1>
+            <p>At Beauty and Health, we believe that true confidence comes from feeling your best, inside and out. As a leading aesthetics medical clinic, we are dedicated to enhancing your natural beauty while prioritizing your health and well-being.</p>
+            <p>Our expert team of licensed professionals combines cutting-edge technology with personalized care to deliver exceptional results. From rejuvenating skin treatments to advanced aesthetic procedures, every service is tailored to meet your unique needs.</p>
+            <p>We strive to provide a safe, comfortable, and professional environment where your beauty and health come first.</p>
+            <p>Discover the art of feeling radiant—welcome to a clinic where your transformation begins.</p>
+        </div>
+        <div class="form">
+            <h2>We want to make your dreams become true!</h2>
+            <h3>Fill in the form and take the first step!</h3>
+            <form>
+                <fieldset>              
+                <div>
+                    <label for="name" class="form-label mt-4">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    <label for="phone" class="form-label mt-4">Contact number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter number">
+                    <label for="email" class="form-label mt-4">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+                </fieldset>
+            </form>    
+        </div>
     </div>
-    
-    <!--Create form-->
-    <!--Make sure text and form are horizontally aligned-->
-    <!--Social media on footer-->
+
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="/static/img/facebook.png" alt="facebook" class="facebook"></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="/static/img/linkedin.png" alt="linkedin" class="linkedin"></a>
+        <a href="https://x.com" target="_blank" rel="noopener noreferrer"><img src="/static/img/x.png" alt="x" class="x"></a>
+    </div>
 
 </body>
 </html>
