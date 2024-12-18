@@ -194,9 +194,13 @@ h1, h2, h3 {
         margin-right: 10px;
     }
 
+    .social-media {
+        justify-content: center;
+        align-items: center;
+    }
+
     .social-media img {
-        height: 40px;
-        margin-right: 30px;
+        height: 50px;
     }
 
     .know-us {
