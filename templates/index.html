@@ -26,7 +26,7 @@
 
     <nav class="menu">
         <div class="logo-button">
-            <img src="/static/img/logo.png" alt="logo" class="logo">
+            <a href="{{ url_for('home') }}"><img src="/static/img/logo.png" alt="logo" class="logo"></a>
             <label for="toggle-menu" class="menu-button">☰</label>
         </div>
          
@@ -62,7 +62,9 @@
                     <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter number">
                     <label for="email" class="form-label mt-4">Email address</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
-                    <button type="submit" class="btn btn-primary">Submit</button>                    
+                    <div class="button">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>                    
                 </div>
                 </fieldset>
             </form>
@@ -79,7 +81,7 @@
     </div>
 
     <div class="reviews">
-        <h1>Get to know us through the words of other clients</h1>
+        <h1 class="know-us">Get to know us through the words of other clients</h1>
         <div class="testimonials">
             <img src="/static/img/1.png" alt="">
             <img src="/static/img/2.png" alt="">
